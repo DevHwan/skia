@@ -42,6 +42,7 @@ config("default") {
       "/bigobj",  # Some of our files are bigger than the regular limits.
       "/WX",  # Treat warnings as errors.
       "/utf-8",  # Set Source and Executable character sets to UTF-8.
+      "/wd4251",
     ]
     if (is_clang) {
       cflags += [ "-fms-compatibility-version=19" ]  # 2015
